@@ -57,8 +57,7 @@ If you want to execute a custom function when the follow/unfollow button is clic
 - `avatar`: The URL of the user's avatar image (string).
 - `description`: A brief description of the user (string).
 - `button-text`: The initial text of the button (string).
-- `button-function`: The name of the function to be executed on button click (string).
-
+- 
 ## Example
 
 Here's a complete example of how to use the `user-card` component in your project:
