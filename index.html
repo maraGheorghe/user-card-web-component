@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Card Component</title>
+</head>
+<body>
+  <user-card
+    name="Jane Doe"
+    avatar="https://th.bing.com/th/id/OIP.5XeFy9NJWfDnWXIrNfWzSAHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+    description="Web Developer and Open Source Enthusiast"
+    button-text="Follow"
+  ></user-card>
+
+  <script>
+    function followUser() {
+      alert('Button pressed!');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const userCard = document.querySelector('user-card');
+      userCard.setAttribute('button-function', 'followUser');
+    });
+  </script>
+  <script src="user-card.js"></script>
+</body>
+</html>
+
